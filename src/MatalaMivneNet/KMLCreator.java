@@ -13,13 +13,13 @@ public class KMLCreator {
 	private String Modulefin ="</Folder></Document></kml>"; 
 	private String Moduleend ="</coordinates></Point></Placemark>";
 	private String Source []= new String [1];
-	public KMLCreator(Lat a, Lon b,ID c) {
-		this.Source = KMLCreate(a,b,c);
+	public KMLCreator(Lat a, Lon b,ID c,Time d) {
+		this.Source = KMLCreate(a,b,c,d);
 	}
-	public String[] KMLCreate(Lat a,Lon b,ID c) {
+	public String[] KMLCreate(Lat a,Lon b,ID c,Time d) {
         Source[0]=Begin;
         for (int i=0; i<a.getLattitude().length; i++){
-            Source[0]=Source[0]+ModuleLon+c.getNames()[i]+ModuleLon2+b.getLon()[i]+ModuleLat+a.getLattitude()[i]+ModuleCor+b.getLon()[i]+","+a.getLattitude()[i]+",0"+Moduleend;
+            Source[0]=Source[0]+ModuleLon+c.getNames()[i]+" - "+d.getTimes()[i]+ModuleLon2+b.getLon()[i]+ModuleLat+a.getLattitude()[i]+ModuleCor+b.getLon()[i]+","+a.getLattitude()[i]+",0"+Moduleend;
             }
         Source[0] = Source[0] + Modulefin;
 	return Source;

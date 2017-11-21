@@ -19,7 +19,7 @@ public class MainMat {
 		CheckMax o = new CheckMax(h.getNum(),10);
 		MakeanArray y = new MakeanArray(o.getMaxNum(),b.getSource(),o.getMaxNum().length);
 		Writer Top10 = new Writer("C:/Users/Moshe/Desktop/Top10.txt",y.getArrayCreated());
-		KMLCreator s = new KMLCreator(c,d,e);
+		KMLCreator s = new KMLCreator(c,d,e,g);
 		Writer KMLtop10 = new Writer("C:/Users/Moshe/Desktop/KMLTop10.kml",s.getSource());
 		Input KMLFinal = new Input(syso,y);
 		MakeanArray KMLF = new MakeanArray(KMLFinal.getIndex(),y.getArrayCreated(),KMLFinal.getIndex().length);
@@ -27,7 +27,8 @@ public class MainMat {
 		Lat FLc = new Lat(FinalListb);
 		Lon FLd = new Lon(FinalListb);
 		ID FLe = new ID(FinalListb);
-		KMLCreator FLs = new KMLCreator(FLc,FLd,FLe);
+		Time FLf = new Time(FinalListb);
+		KMLCreator FLs = new KMLCreator(FLc,FLd,FLe,FLf);
 		Writer KMLFinalList = new Writer("C:/Users/Moshe/Desktop/KMLFinalList.kml",FLs.getSource());
 		/*System.out.println("Source");(Testing the program)
 		for ( int i=0;i<b.getSource().length;i++) {
