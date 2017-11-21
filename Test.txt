@@ -1,0 +1,4 @@
+BSSID,LAT,LON,SSID,Crypt,Beacon Interval,Connection Mode,Channel,RXL,Date,Time
+F0:B0:52:3E:C8:DC,32.10519,35.20704,Ariel_University,Open,-38,Infra,48,-35,2017/10/23,14:40:17
+EC:8C:A2:26:D2:C8,32.10519,35.20704,Ariel_University,Open,-41,Infra,6,-39,2017/10/23,14:40:11
+F0:B0:52:3E:C8:D8,32.10519,35.20704,Ariel_University,Open,-41,Infra,1,-38,2017/10/23,14:40:17
